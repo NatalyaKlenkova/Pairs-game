@@ -1,0 +1,13 @@
+@media (max-width: 1280px) {
+    .board {
+        display: none;
+    }
+
+    .popup--sorry {
+        display: flex;
+    }
+
+    .popup__descr {
+        margin-bottom: 0;
+    }
+}
