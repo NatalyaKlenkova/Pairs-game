@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Game Pairs</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer type="module" src="js/pairs.js"></script>
+</head>
+
+<body>
+    <section class="game">
+        <div class="container">
+            <div class="board">
+                <div class="settings">
+                    <div class="admin">
+                        <h2 class="admin__title">
+                            Выбери количество рядов и строк:
+                        </h2>
+                        <form class="form">
+                            <input type="text" class="input" placeholder="Введи четное число от 2 до 10">
+                            <button type="submit" class="start btn btn--active">Начать игру</button>
+                        </form>
+                    </div>
+                    <div class="timer">
+                        <h2 class="timer__title">Оставшееся время:</h2>
+                        <div class="countdown">
+                            <span class="minutes">01</span><span class="colon">:</span><span class="seconds">00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="cards__wrapper">
+                    </div>
+                </div>
+            </div>
+            <div class="popup popup--success">
+                <div class="popup__content">
+                    <p class="popup__descr">
+                        Супер! У тебя все получилось!
+                    </p>
+                    <button class="restart btn btn--active">Сыграть еще раз</button>
+                </div>
+            </div>
+            <div class="popup popup--fail">
+                <div class="popup__content">
+                    <p class="popup__descr">
+                        Время вышло :(
+                    </p>
+                    <button class="restart btn btn--active">Сыграть еще раз</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
