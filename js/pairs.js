@@ -170,7 +170,7 @@ import { cards } from './cards-array.js';
                     stopFlip = false;
                     popupSuccess.classList.remove('popup--active');
                     popupFail.classList.remove('popup--active');
-                    timer.classList.remove('timer--active');
+                    stopSetInterval();
                     clearField();
                 }
             })
