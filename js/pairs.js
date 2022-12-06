@@ -156,6 +156,7 @@ import { cards } from './cards-array.js';
                 openedCard.addEventListener('transitionend', () => {
                     if (openedCards.length === cardsArray.length) {
                         popupSuccess.classList.add('popup--active');
+                        timer.classList.remove('timer--active');
                         restartGame();
                     }
                 })
